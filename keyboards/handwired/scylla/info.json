@@ -3,13 +3,12 @@
     "keyboard_name": "handwired/scylla",
     "maintainer": "Alexander Poole",
     "bootloader": "rp2040",
-    "diode_direction": "ROW2COL",
+    "diode_direction": "COL2ROW",
     "matrix_pins": {
-        "cols": ["GP9", "GP8", "GP7", "GP6", "GP5", "GP4"],
+        "cols": ["GP4", "GP5", "GP6", "GP7", "GP8", "GP9"],
         "rows": ["GP27", "GP26", "GP22", "GP20", "GP23", "GP21"]
     },
     "processor": "RP2040",
-    "url": "",
     "usb": {
         "pid": "0x1829",
         "vid": "0xA8F8"
@@ -77,19 +76,19 @@
                 {"matrix": [9, 1], "x": 15, "y": 3},
                 {"matrix": [9, 0], "x": 16, "y": 3},
 
-                {"matrix": [4, 1], "x": 5, "y": 4},
-                {"matrix": [5, 0], "x": 6, "y": 4},
-                {"matrix": [5, 2], "x": 7, "y": 4},
+                {"matrix": [4, 4], "x": 5, "y": 4},
+                {"matrix": [5, 5], "x": 6, "y": 4},
+                {"matrix": [5, 3], "x": 7, "y": 4},
 
                 {"matrix": [10, 1], "x": 9, "y": 4},
-                {"matrix": [11, 3], "x": 10, "y": 4},
-                {"matrix": [11, 5], "x": 11, "y": 4},
+                {"matrix": [11, 0], "x": 10, "y": 4},
+                {"matrix": [11, 2], "x": 11, "y": 4},
 
-                {"matrix": [5, 1], "x": 6, "y": 5},
-                {"matrix": [5, 3], "x": 7, "y": 5},
+                {"matrix": [5, 4], "x": 6, "y": 5},
+                {"matrix": [5, 2], "x": 7, "y": 5},
 
-                {"matrix": [11, 2], "x": 9, "y": 5},
-                {"matrix": [11, 4], "x": 10, "y": 5}
+                {"matrix": [11, 1], "x": 9, "y": 5},
+                {"matrix": [11, 3], "x": 10, "y": 5}
             ]
         }
     }
