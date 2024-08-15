@@ -18,6 +18,13 @@
 #include QMK_KEYBOARD_H
 #include "print.h"
 
+#define GUI_S LGUI_T(KC_S)
+#define ALT_D LALT_T(KC_D)
+#define CTL_F LCTL_T(KC_F)
+
+#define GUI_N RGUI_T(KC_N)
+#define CTL_M RCTL_T(KC_M)
+
 #define SYM_SPC LT(2, KC_SPC)
 #define SYM_ENT LT(2, KC_ENT)
 #define NAV_ESC LT(1, KC_ESC)
@@ -28,13 +35,13 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                            //-----------------------------------------------------  |  -----------------------------------------------------//
                              KC_TAB,  KC_Q,    KC_W,    KC_E,    KC_R,    KC_T,        KC_Y,    KC_U,    KC_I,    KC_O,    KC_P,    KC_BSLS,
                            //-----------------------------------------------------  |  -----------------------------------------------------//
-                             KC_BSLS, KC_A,    KC_S,    KC_D,    KC_F,    KC_G,        KC_H,    KC_J,    KC_K,    KC_L,    KC_SCLN, KC_QUOT,
+                             KC_BSLS, KC_A,    GUI_S,   ALT_D,   CTL_F,   KC_G,        KC_H,    KC_J,    KC_K,    KC_L,    KC_SCLN, KC_QUOT,
                            //-----------------------------------------------------  |  -----------------------------------------------------//
-                             KC_LSFT, KC_Z,    KC_X,    KC_C,    KC_V,    KC_B,        KC_N,    KC_M,    KC_COMM, KC_DOT,  KC_SLSH, KC_RSFT,
+                             KC_LSFT, KC_Z,    KC_X,    KC_C,    KC_V,    KC_B,        GUI_N,   CTL_M,   KC_COMM, KC_DOT,  KC_SLSH, KC_RSFT,
                            //-----------------------------------------------------  |  -----------------------------------------------------//
-                                                        SYM_SPC, NAV_ESC, KC_LGUI,     SYM_ENT, KC_BSPC, KC_RGUI,
+                                                        SYM_SPC, NAV_ESC, _______,     SYM_ENT, KC_BSPC, _______,
                            //-----------------------------------------------------  |  -----------------------------------------------------//
-                                                                 KC_LCTL, KC_LALT,     KC_RCTL, KC_RALT),
+                                                                 _______, _______,     _______, _______),
 
     [1] = LAYOUT_split_4x6_5(_______, _______, _______, _______, _______, _______,     _______, _______, _______, _______, _______, _______,
                            //-----------------------------------------------------  |  -----------------------------------------------------//
